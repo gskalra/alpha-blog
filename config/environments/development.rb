@@ -1,4 +1,8 @@
 Rails.application.configure do
+  
+  #class Application < Rails::Application
+  config.web_console.whitelisted_ips = '58.182.198.240'
+#end
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -38,10 +42,4 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-  
-  #whitelist ip addresses
-  config.web_console.whitelisted_ips = '58.182.198.240'
 end
-
-
-
